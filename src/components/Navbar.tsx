@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 import LPDGLogo from '../assets/images/LPDGLogo.jpg'
 const Navbar = () => {
     return (
-        <nav className="top-0 z-50 py-8 items-center flex flex-wrap justify-between bg-neutral-300 text-black">
+        <nav className="top-0 z-50 py-8 items-center flex flex-wrap justify-between bg-neutral-300 text-black rounded-b-2xl">
             <div className="flex items-center">
                 <img src={LPDGLogo} height={40} width={40} alt="LPDG-Logo" className="mx-6 rounded-xl" />
             </div>

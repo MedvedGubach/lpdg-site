@@ -10,7 +10,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <button className="bg-neutral-900 text-red-600 hover:bg-neutral-950 hover:cursor-pointer">
+                <button className="hover:cursor-pointer">
                     <FaWhatsapp className="text-2xl text-green-500">Contactar por WhatsApp</FaWhatsapp>
                 </button>
             </a>
