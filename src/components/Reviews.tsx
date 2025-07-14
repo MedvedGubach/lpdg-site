@@ -26,7 +26,7 @@ const Reviews = () => {
 
     return (
         <section id="reviews" className="text-black py-12 border-b-1 border-neutral-400">
-            <h1 className="text-3xl text-indigo-600 font-bold text-center mb-10">Testimonios</h1>
+            <h1 className="text-3xl text-indigo-600 font-bold text-center mb-10">Lo que dicen los alumnos</h1>
             <div className="flex flex-col md:flex-row gap-6 justify-center ">
                 {reviews.map((review, i) => (
                     <div key={i} className="bg-neutral-200 max-w-sm rounded-xl p-7">

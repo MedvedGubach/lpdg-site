@@ -1,12 +1,12 @@
 import { Fragment } from 'react'
 import Hero from './components/Hero'
-import Reviews from './components/Reviews'
 import About from './components/About'
 import WhyLearnWMe from './components/WhyLearnWMe'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Gallery from './components/Gallery'
 import Navbar from './components/Navbar'
+import Tabs from './components/Tabs'
 import './App.css'
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <Hero />
         <About />
         <WhyLearnWMe />
-        <Reviews />
+        <Tabs />
         <Gallery />
         <Contact />
         <Footer />
