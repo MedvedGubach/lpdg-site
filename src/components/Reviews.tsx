@@ -3,9 +3,9 @@ import { useEffect } from "react";
 const Reviews = () => {
 
     useEffect(() => {
-        if (window.instgrm) {
-            window.instgrm.Embeds.process();
-        }
+        /*    if (window.instgrm) {
+               window.instgrm.Embeds.process();
+           } */
     }, []);
 
 
@@ -33,11 +33,14 @@ const Reviews = () => {
                         <p className="text-center italic mb-4">"{review.quote} + nombre del alumno + video"</p>
 
                         <blockquote
-                            className="instagram-media"
-                            data-instgrm-permalink={review.instagramUrl}
-                            data-instgrm-version="14"
-                            style={{ background: '#fff', border: 0, margin: '0 auto', maxWidth: '540px' }}
-                        ></blockquote>
+                        className="text-center font-black"
+                        /*  className="instagram-media"
+                         data-instgrm-permalink={review.instagramUrl}
+                         data-instgrm-version="14"
+                         style={{ background: '#fff', border: 0, margin: '0 auto', maxWidth: '540px' }} */
+                        >
+                            Video Embedido Aqui
+                        </blockquote>
                     </div>
                 ))}
             </div>
