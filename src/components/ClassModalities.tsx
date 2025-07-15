@@ -1,7 +1,7 @@
 const ClassModalities = () => {
   return (
     <div>
-        
+        {/* table */}
     </div>
   )
 }
