@@ -1,14 +1,16 @@
-import { Fragment, useState } from 'react';
-import Reviews from './Reviews';
-
-const Tabs = () => {
-    const [activeTab, setActiveTab] = useState('reviews');
+import { Fragment, useState } from "react";
+import GuitarTips from "./GuitarTips";
+import MoreAbout from "./MoreAbout";
+const ButchFeats = () => {
+    const [activeTab, setActiveTab] = useState('tips');
     const tabs = [
-        { id: "reviews", label: "Testimonios" },
-        { id: "gallery", label: "Galeria" },
+        { id: "tips", label: "Tips y Consejos" },
+        { id: "moreAbout", label: "Más Sobre Mí" },
+        { id: "brands", label: "Marcas que Confían en Mí" },
     ];
     return (
         <section className="mx-auto py-12 px-4">
+            <h2 className="text-3xl text-indigo-600 font-semibold text-center mb-10">Butch en Acción</h2>
             <div className="flex justify-center space-x-4 border-b border-gray-500 mb-6">
                 {tabs.map((tab) => (
                     <button
@@ -26,16 +28,22 @@ const Tabs = () => {
 
             {/* Contenido Tabs */}
             <div>
-                {activeTab === "reviews" && (
+                {activeTab === "tips" && (
                     <Fragment>
-                        <Reviews />
+                        <GuitarTips />
                     </Fragment>
                 )}
-                {activeTab === "gallery" && (
+                {activeTab === "moreAbout" && (
+                    <Fragment>
+                        <div>
+                            <MoreAbout />
+                        </div>
+                    </Fragment>
+                )}
+                {activeTab === "brands" && (
                     <Fragment>
                         <div className="text-center">
-                            <h2 className="text-xl font-bold mb-2">Galeria de Alumnos en Clase Aquí</h2>
-                            <p>Clases online, presenciales o cursos grabados a tu ritmo.</p>
+                            <h2 className="text-xl font-bold mb-2">Marcas que colaboran conmigo</h2>
                         </div>
                     </Fragment>
                 )}
@@ -44,4 +52,4 @@ const Tabs = () => {
     )
 }
 
-export default Tabs
+export default ButchFeats

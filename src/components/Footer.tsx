@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <footer className="bg-neutral-300 text-black">
+        <footer className="bg-neutral-300 text-black rounded-t-2xl">
             <p className="text-center">Siguelo en sus redes sociales.</p>
             <div className="flex justify-center gap-6 text-2xl">
                 <a href="https://www.facebook.com/leccionespracticasdeguitarra" target="_blank" rel="noopener noreferrer">
