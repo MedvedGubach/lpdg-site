@@ -1,12 +1,12 @@
-import { Fragment } from 'react'
-import Hero from './components/Hero'
-import About from './components/About'
-import WhyLearnWMe from './components/WhyLearnWMe'
-import Footer from './components/Footer'
-import Contact from './components/Contact'
-import Gallery from './components/Gallery'
-import Navbar from './components/Navbar'
-import Tabs from './components/Tabs'
+import { Fragment } from 'react';
+import Hero from './components/Hero';
+import About from './components/About';
+import WhyLearnWMe from './components/WhyLearnWMe';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Navbar from './components/Navbar';
+import Tabs from './components/Tabs';
+import ButchFeats from './components/ButchFeats';
 import './App.css'
 
 function App() {
@@ -21,16 +21,16 @@ function App() {
       </div>
 
 
-      <div className="max-w-screen-3xl mx-auto px-4 sm:px-6 md:px-8 overflow-x-clip">
+      {/* <div className="max-w-screen-3xl mx-auto px-4 sm:px-6 md:px-8 overflow-x-clip"> */}
         <Navbar />
         <Hero />
         <About />
         <WhyLearnWMe />
         <Tabs />
-        <Gallery />
+        <ButchFeats/>
         <Contact />
         <Footer />
-      </div>
+     {/*  </div> */}
 
     </Fragment>
   )
