@@ -15,7 +15,6 @@ const Reviews = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const itemsPerPage = 3;
 
-
     useEffect(() => {
         /*    if (window.instgrm) {
                window.instgrm.Embeds.process();
@@ -57,14 +56,14 @@ const Reviews = () => {
                 <div className="flex justify-center mt-8 gap-4">
                     <button
                         onClick={handlePrev}
-                        className="bg-indigo-600 text-white px-4 py-2 rounded disabled:opacity-50"
+                        className="bg-indigo-600 text-white px-4 py-2  disabled:opacity-50 hover:bg-indigo-800 font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring- focus:ring-indigo-400"
                         disabled={currentIndex === 0}
                     >
                         ← Anterior
                     </button>
                     <button
                         onClick={handleNext}
-                        className="bg-indigo-600 text-white px-4 py-2 rounded disabled:opacity-50"
+                        className="bg-indigo-600 text-white px-4 py-2 disabled:opacity-50 hover:bg-indigo-800 font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring- focus:ring-indigo-400"
                         disabled={start + itemsPerPage >= reviews.length}
                     >
                         Siguiente →

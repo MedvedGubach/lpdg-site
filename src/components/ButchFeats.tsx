@@ -4,6 +4,7 @@ import MoreAbout from "./MoreAbout";
 const ButchFeats = () => {
     const [activeTab, setActiveTab] = useState('tips');
     const tabs = [
+        { id: "collabs", label: "Colaboraciones Destacadas" },
         { id: "tips", label: "Tips y Consejos" },
         { id: "moreAbout", label: "Más Sobre Mí" },
         { id: "brands", label: "Marcas que Confían en Mí" },

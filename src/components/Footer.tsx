@@ -5,13 +5,13 @@ const Footer = () => {
         <footer className="bg-neutral-300 text-black rounded-t-2xl">
             <p className="text-center">Siguelo en sus redes sociales.</p>
             <div className="flex justify-center gap-6 text-2xl">
-                <a href="https://www.facebook.com/leccionespracticasdeguitarra" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/leccionespracticasdeguitarra" aria-label='Facebook' target="_blank" rel="noopener noreferrer">
                     <FaFacebook className="text-blue-500 text-2xl" />
                 </a>
-                <a href="https://www.instagram.com/leccionespracticasdeguitarra/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/leccionespracticasdeguitarra/" aria-label='Instagram' target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-violet-500 text-2xl" />
                 </a>
-                <a href="https://www.youtube.com/c/LeccionesPr%C3%A1cticasdeGuitarraButchGarc%C3%ADa" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/c/LeccionesPr%C3%A1cticasdeGuitarraButchGarc%C3%ADa" aria-label='YouTube' target="_blank" rel="noopener noreferrer">
                     <FaYoutube className="text-red-500 text-2xl" />
                 </a>
             </div>
