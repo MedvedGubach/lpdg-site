@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="flex flex-col py-24 justify-center items-center text-center px-4 border-b border-neutral-400 bg-white">
+        <section className="flex flex-col py-32 justify-center items-center text-center px-4 border-b border-neutral-400">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold">Lecciones Prácticas de Guitarra con <span className="text-indigo-600">Butch García</span></h1>
@@ -14,17 +14,17 @@ const Hero = () => {
 
                     <div className="flex justify-center md:justify-center gap-4">
                         <a
-                            href="https://wa.me/523310882137?text=Hola%20Butch!%20Quiero%20tomar%20clases%20de%20guitarra"
-                            className="bg-indigo-600  text-white py-3 px-6 shadow-lg transition-all duration-300 hover:bg-indigo-800 rounded-full hover:scale-105 focus:outline-none"
-                            target="_blank"
-                        >
-                            ¡Agendar clase ahora!
-                        </a>
-                        <a
                             href="#reviews"
                             className="bg-indigo-600  text-white py-3 px-6  shadow-lg transition-all duration-300 hover:bg-indigo-800 rounded-full hover:scale-105 focus:outline-none"
                         >
                             Ver testimonios
+                        </a>
+
+                        <a
+                            href="#contact"
+                            className="bg-indigo-600  text-white py-3 px-6 shadow-lg transition-all duration-300 hover:bg-indigo-800 rounded-full hover:scale-105 focus:outline-none"
+                        >
+                            ¡Agendar clase ahora!
                         </a>
                     </div>
                 </div>

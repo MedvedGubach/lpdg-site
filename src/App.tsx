@@ -3,9 +3,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import WhyLearnWMe from './components/WhyLearnWMe';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
+import ContactFaqTabs from './components/ContactFaqTabs';
 import Navbar from './components/Navbar';
-import Tabs from './components/Tabs';
+import Reviews from './components/ReviewsTabs';
 import Modalities from './components/Modalities';
 import ButchFeats from './components/ButchFeats';
 import './App.css'
@@ -27,10 +27,10 @@ function App() {
       <Hero />
       <About />
       <WhyLearnWMe />
-      <Tabs />
+      <Reviews />
       <ButchFeats />
       <Modalities />
-      <Contact />
+      <ContactFaqTabs />
       <Footer />
       {/*  </div> */}
 

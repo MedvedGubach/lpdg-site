@@ -2,9 +2,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <section className="py-20 px-6 text-center bg-gradient-to-b from-white to-neutral-100 border-t border-neutral-400">
-      <h2 className="text-4xl font-bold text-indigo-700 mb-4">¿Listo para comenzar?</h2>
-      <p className="mb-8 text-xl text-gray-700">Agenda tu primera clase con Butch y empieza a tocar lo que más te gusta</p>
+    <section id='contact' className="py-12 px-6 text-center">
+      <h1 className="mb-8 text-xl text-indigo-600 font-semibold">Agenda tu primera clase con Butch y empieza a tocar lo que más te gusta</h1>
 
       <a
         href="https://wa.me/523310882137?text=Hola%20Butch!%20Quiero%20tomar%20clases%20de%20guitarra"

@@ -1,17 +1,16 @@
-import { useState, useRef, useLayoutEffect } from "react";
-import GuitarTips from "./GuitarTips";
-import MoreAbout from "./MoreAbout";
+import { useLayoutEffect, useRef, useState } from 'react'
+import Contact from './Contact';
+import Faq from './Faq';
 import { motion, AnimatePresence } from "framer-motion";
 
-const ButchFeats = () => {
-    const [activeTab, setActiveTab] = useState("tips");
+const ContactFaqTabs = () => {
+
+    const [activeTab, setActiveTab] = useState('schedule');
     const [tabUnderlineProps, setTabUnderlineProps] = useState({ left: 0, width: 0 });
 
     const tabs = [
-        { id: "collabs", label: "Colaboraciones Destacadas" },
-        { id: "tips", label: "Tips y Consejos" },
-        { id: "moreAbout", label: "Más Sobre Mí" },
-        { id: "brands", label: "Marcas que Confían en Mí" },
+        { id: "schedule", label: "Agenda tu Clase" },
+        { id: "faq", label: "Preguntas Frecuentes" },
     ];
 
     const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
@@ -24,9 +23,11 @@ const ButchFeats = () => {
         }
     }, [activeTab]);
 
+
     return (
         <section className="mx-auto py-12 px-4">
-            <h2 className="text-3xl text-indigo-600 font-semibold text-center mb-10">Butch en Acción</h2>
+            <h1 className="text-3xl text-indigo-600 font-bold text-center mb-10">¿Listo para comenzar?
+            </h1>
 
             <div className="relative flex justify-center space-x-0 md:space-x-4 border-b border-gray-500 mb-6">
                 {tabs.map((tab) => (
@@ -44,8 +45,6 @@ const ButchFeats = () => {
                         {tab.label}
                     </button>
                 ))}
-
-                {/* 🔽 Animated underline */}
                 <motion.div
                     className="absolute bottom-0 h-1 bg-indigo-600 rounded-full"
                     layout
@@ -59,44 +58,32 @@ const ButchFeats = () => {
 
             {/* Contenido Tabs */}
             <AnimatePresence mode="wait">
-                {activeTab === "tips" && (
+                {activeTab === "schedule" && (
                     <motion.div
-                        key="tips"
+                        key="schedule"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <GuitarTips />
+                        <Contact />
                     </motion.div>
                 )}
-                {activeTab === "moreAbout" && (
+                {activeTab === "faq" && (
+
                     <motion.div
-                        key="moreAbout"
+                        key="faq"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <MoreAbout />
+                        <Faq />
                     </motion.div>
-                )}
-                {activeTab === "brands" && (
-                    <motion.div
-                        key="brands"
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <div className="text-center">
-                            <h2 className="text-xl font-bold mb-2">Marcas que colaboran conmigo</h2>
-                        </div>
-                    </motion.div>
+
                 )}
             </AnimatePresence>
-        </section>
-    );
-};
+        </section>)
+}
 
-export default ButchFeats;
+export default ContactFaqTabs
