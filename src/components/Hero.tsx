@@ -1,4 +1,3 @@
-import { MdOutlineReviews } from "react-icons/md";
 const Hero = () => {
     return (
         <section className="flex flex-col py-24 justify-center items-center text-center px-4 border-b border-neutral-400 bg-white">
