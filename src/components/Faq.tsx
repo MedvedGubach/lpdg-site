@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Faq = () => {
 
@@ -46,11 +47,20 @@ const Faq = () => {
                                 <FaChevronDown className="text-indigo-600" />
                             )}
                         </button>
-                        {activeIndex === index && (
-                            <div className="px-4 pb-4 text-black text-base font-semibold">
-                                {q.answer}
-                            </div>
-                        )}
+                        <AnimatePresence>
+                            {activeIndex === index && (
+                                <motion.div
+                                    className="px-4 pb-4 text-black text-base font-semibold overflow-hidden"
+                                    initial={{ opacity: 0, height: 0 }}
+                                    animate={{ opacity: 1, height: "auto" }}
+                                    exit={{ opacity: 0, height: 0 }}
+                                    transition={{ duration: 0.1, ease: "easeInOut" }}
+                                >
+                                    {q.answer}
+                                </motion.div>
+
+                            )}
+                        </AnimatePresence>
                     </div>
                 ))}
             </div>
