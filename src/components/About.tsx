@@ -45,7 +45,7 @@ const About = () => {
                             Originario de Guadalajara y con más de 25 años como guitarrista en la escena musical ha sido parte de múltiples proyectos como Cadáver, Devourer, B Chaos, DonSr y Janet Camargo, además de colaborar con músicos internacionales como Pro-fe-cía (L.A.). Ha compartido escenario con figuras de alto calibre como Nightwish, In Flames, Abbath, Dave Evans (AC/DC), Courtney Cox y Glenn Hughes, entre muchos otros.
                         </p>
                         <p>
-                            Su experiencia no solo se limita al escenario: fue Director General del campus Fermatta Guadalajara y luego Vicepresidente del Consejo Nacional en Fermatta, una de las universidades más influyentes de música en Latinoamérica, donde trabajó con leyendas como Steve Vai, Marcus Miller, Dom Famularo y Chad Smith.
+                            Su experiencia no solo se limita al escenario: fue Director General del campus Guadalajara y luego Vicepresidente del Consejo Nacional en Fermatta, una de las universidades más influyentes de música en Latinoamérica, donde trabajó con leyendas como Steve Vai, Marcus Miller, Dom Famularo y Chad Smith.
                         </p>
                         <p>
                             Desde 2014, imparte clases de guitarra centradas en técnicas de rock y metal. Su enfoque personalizado permite que cada alumno aprenda a su ritmo, con la música de su elección, desarrollando técnica, expresión y confianza.
