@@ -25,7 +25,7 @@ const ContactFaqTabs = () => {
 
 
     return (
-        <section className="mx-auto py-12 px-4">
+        <section id='contact' className="mx-auto py-12 px-4">
             <h1 className="text-3xl text-indigo-600 font-bold text-center mb-10">¿Listo para comenzar?
             </h1>
 

@@ -68,7 +68,7 @@ const About = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7, delay: 0.5 }}
                         >
-                            Desde 2014, imparte clases de guitarra centradas en técnicas de rock y metal. Su enfoque personalizado permite que cada alumno aprenda a su ritmo, con la música de su elección, desarrollando técnica, expresión y confianza.
+                            Desde 2014, imparte clases de guitarra centradas en el género musical de la elección del alumno. Su enfoque personalizado permite que cada alumno aprenda a su ritmo, con la música de su elección, desarrollando técnica, expresión y confianza.
                         </motion.p>
                     </article>
                 </div>

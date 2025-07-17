@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <section id='contact' className="py-12 px-6 text-center">
+    <section className="py-12 px-6 text-center">
       <h1 className="mb-8 text-xl text-indigo-600 font-semibold">Agenda tu primera clase con Butch y empieza a tocar lo que más te gusta</h1>
 
       <a
@@ -11,7 +11,7 @@ const Contact = () => {
         rel="noopener noreferrer"
         aria-label="Enviar mensaje por WhatsApp a Butch"
       >
-        <button className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-120 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 hover:cursor-pointer">
+        <button className="inline-flex items-center gap-3 bg-green-700 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-120 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 hover:cursor-pointer">
           <FaWhatsapp className="text-2xl" />
           Contactar por WhatsApp
         </button>
