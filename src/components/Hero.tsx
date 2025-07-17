@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import LazyYouTubeEmbed from "./LazyYoutubeEmbed";
 const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
@@ -11,13 +11,16 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
                 <div className="space-y-6">
                     <motion.h1
-                        className="text-4xl md:text-6xl font-bold"
+                        className="text-4xl md:text-6xl font-bold leading-tight text-center"
                         viewport={{ once: true }}
                         variants={container(0.1)}
                         initial="hidden"
                         animate="visible"
                     >
-                        Lecciones Prácticas de Guitarra con <span className="text-indigo-600">Butch García</span>
+                        <motion.span className="block">Lecciones Prácticas</motion.span>
+                        <motion.span className="block">de Guitarra</motion.span>
+                        <motion.span className="block">con</motion.span>
+                        <motion.span className="block text-indigo-600">Butch García</motion.span>
                     </motion.h1>
 
                     <motion.p className="text-lg text-neutral-700"
@@ -55,6 +58,7 @@ const Hero = () => {
                 </div>
 
                 <div className="aspect-video">
+                    <LazyYouTubeEmbed videoId="no11a22mb38" />
                     <iframe
                         className="w-full h-full rounded-xl shadow-lg"
                         src="https://www.youtube-nocookie.com/embed/no11a22mb38"
