@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const ContactFaqTabs = () => {
 
-    const [activeTab, setActiveTab] = useState('schedule');
+    const [activeTab, setActiveTab] = useState<string>('schedule');
     const [tabUnderlineProps, setTabUnderlineProps] = useState({ left: 0, width: 0 });
 
     const tabs = [

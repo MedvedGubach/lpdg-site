@@ -38,17 +38,17 @@ const About = () => {
                     </AnimatePresence>
                 </motion.div>
 
-                
+
                 <div className="space-y-4">
                     <article className="text-2xl space-y-12">
                         <p>
-                            Con más de 25 años como guitarrista en la escena músical, Butch ha tocado en escenarios
-                            nacionales e internacionales, fusionando el poder del metal con la elegancia del blues y
-                            la sensibilidad acústica.
+                            Originario de Guadalajara y con más de 25 años como guitarrista en la escena musical ha sido parte de múltiples proyectos como Cadáver, Devourer, B Chaos, DonSr y Janet Camargo, además de colaborar con músicos internacionales como Pro-fe-cía (L.A.). Ha compartido escenario con figuras de alto calibre como Nightwish, In Flames, Abbath, Dave Evans (AC/DC), Courtney Cox y Glenn Hughes, entre muchos otros.
                         </p>
                         <p>
-                            Su enfoque personalizado permite que cada alumno aprenda a su ritmo, con la música de su elección,
-                            desarrollando técnica, expresión y confianza.
+                            Su experiencia no solo se limita al escenario: fue Director General del campus Fermatta Guadalajara y luego Vicepresidente del Consejo Nacional en Fermatta, una de las universidades más influyentes de música en Latinoamérica, donde trabajó con leyendas como Steve Vai, Marcus Miller, Dom Famularo y Chad Smith.
+                        </p>
+                        <p>
+                            Desde 2014, imparte clases de guitarra centradas en técnicas de rock y metal. Su enfoque personalizado permite que cada alumno aprenda a su ritmo, con la música de su elección, desarrollando técnica, expresión y confianza.
                         </p>
                     </article>
                 </div>

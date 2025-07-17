@@ -19,7 +19,7 @@ const WhyLearnWMe = () => {
                             🧠 <strong>Sin presión ni estrés:</strong> avanzas a tu ritmo, con clases dinámicas y adaptadas a tu nivel.
                         </li>
                         <li>
-                            👨‍🏫 <strong>Más de 15 años enseñando:</strong> he trabajado con principiantes, niños, adultos y músicos avanzados.
+                            👨‍🏫 <strong>Más de 10 años enseñando:</strong> he trabajado con principiantes, niños, adultos y músicos avanzados.
                         </li>
                         <li>
                             🚀 <strong>Resultados reales:</strong> cada clase tiene un objetivo claro y aplicable.
