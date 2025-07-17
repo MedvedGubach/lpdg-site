@@ -7,7 +7,7 @@ const Navbar = () => {
             <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
                 <div className="flex items-center">
                     <img src={LPDGLogo} height={40} width={40} alt="LPDG-Logo" className="rounded-xl" />
-                    <span className="ml-3 text-lg font-bold text-indigo-600">Lecciones Prácticas de Guitarra</span>
+                    <span className="ml-3 text-md md:text-lg font-bold text-indigo-600">Lecciones Prácticas de Guitarra</span>
                 </div>
                 <div className="flex gap-4">
                     <a href="https://www.facebook.com/leccionespracticasdeguitarra" aria-label='Facebook' target="_blank" rel="noopener noreferrer">

@@ -11,7 +11,7 @@ const Contact = () => {
         rel="noopener noreferrer"
         aria-label="Enviar mensaje por WhatsApp a Butch"
       >
-        <button className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 hover:cursor-pointer">
+        <button className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-120 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 hover:cursor-pointer">
           <FaWhatsapp className="text-2xl" />
           Contactar por WhatsApp
         </button>

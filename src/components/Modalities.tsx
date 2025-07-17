@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt, FaVideo, FaFileAlt, FaWhatsapp } from 'react-icons/fa';
+import { motion } from 'motion/react';
 
 const Modalities = () => {
 
@@ -14,14 +15,18 @@ const Modalities = () => {
             <h2 className="text-3xl font-bold text-center text-indigo-700 mb-10">Modalidades de Clase</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                 {modalities.map((modality, index) => (
-                    <div
+                    <motion.div
                         key={index}
                         className="bg-neutral-200 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 hover:scale-[1.10] flex flex-col items-center text-center"
+                        viewport={{ once: true, amount: 0.3 }}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
                     >
                         <div className="mb-4">{modality.icon}</div>
                         <h3 className="text-xl font-semibold text-indigo-800 mb-2">{modality.title}</h3>
                         <p className="text-gray-700">{modality.description}</p>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>
