@@ -45,7 +45,6 @@ const ButchFeats = () => {
                     </button>
                 ))}
 
-                {/* 🔽 Animated underline */}
                 <motion.div
                     className="absolute bottom-0 h-1 bg-indigo-600 rounded-full"
                     layout

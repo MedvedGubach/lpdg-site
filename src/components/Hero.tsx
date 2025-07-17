@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import LazyYouTubeEmbed from "./LazyYoutubeEmbed";
+
 const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
@@ -57,13 +59,7 @@ const Hero = () => {
                 </div>
 
                 <div className="aspect-video">
-                    <iframe
-                        className="w-full h-full rounded-xl shadow-lg"
-                        src="https://www.youtube-nocookie.com/embed/no11a22mb38"
-                        title="Intro LPDG"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    />
+                    <LazyYouTubeEmbed videoId="no11a22mb38" />
                 </div>
             </div>
         </section>
