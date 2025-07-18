@@ -2,6 +2,7 @@ import { useState, useRef, useLayoutEffect } from "react";
 import GuitarTips from "./GuitarTips";
 import MoreAbout from "./MoreAbout";
 import { motion, AnimatePresence } from "framer-motion";
+import Collabs from "./Collabs";
 
 const ButchFeats = () => {
     const [activeTab, setActiveTab] = useState("tips");
@@ -37,8 +38,8 @@ const ButchFeats = () => {
                         }}
                         onClick={() => setActiveTab(tab.id)}
                         className={`relative text-sm md:text-xl py-2 px-4 font-semibold transition-colors duration-200 ${activeTab === tab.id
-                                ? "text-indigo-600"
-                                : "text-gray-500 hover:text-indigo-500"
+                            ? "text-indigo-600"
+                            : "text-gray-500 hover:text-indigo-500"
                             }`}
                     >
                         {tab.label}
@@ -58,6 +59,19 @@ const ButchFeats = () => {
 
             {/* Contenido Tabs */}
             <AnimatePresence mode="wait">
+
+                {activeTab === "collabs" && (
+                    <motion.div
+                        key="collabs"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <Collabs />
+                    </motion.div>
+                )}
+
                 {activeTab === "tips" && (
                     <motion.div
                         key="tips"
